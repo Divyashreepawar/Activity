@@ -1,0 +1,37 @@
+public class Circle {
+    private double radius;
+
+    // Constructor to initialize the radius
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    // Method to calculate the area of the circle
+    public double area() {
+        return Math.PI * radius * radius;
+    }
+
+    // Method to calculate the circumference of the circle
+    public double circumference() {
+        return 2 * Math.PI * radius;
+    }
+
+    // Main method to test the Circle class
+    public static void main(String[] args) {
+        Circle circle = new Circle(7);  // Create a circle with radius 7
+
+        // Calculate area and circumference
+        double area = circle.area();
+        double circumference = circle.circumference();
+
+        // Print the results
+        System.out.printf("The area of the circle is: %.2f\n", area);
+        System.out.printf("The circumference of the circle is: %.2f\n", circumference);
+    }
+}
+OUTPUT :
+
+ The area of the circle is: 153.94
+The circumference of the circle is: 43.98
+
+=== Code Execution Successful ===
