@@ -1,0 +1,115 @@
+Define a class named BankAccount with attributes account Number, balance, and account Hold Name. Implement methods deposit() and withdraw() to modify the balance. Instantiate an object of the BankAccount class by using parameterised constructor and demonstrate how to access and modify its attributes.
+public class BankAccount {
+    private int accountNumber;
+    private double balance;
+    private String accountHolderName;
+    // Parameterized constructor to initialize the attributes
+    public BankAccount(int accountNumber, double balance, String accountHolderName) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.accountHolderName = accountHolderName;
+    }
+    // Method to deposit funds into the account
+    public void deposit(double amount) {
+        balance += amount;
+        System.out.println(amount + " deposited successfully.");
+    }
+    // Method to withdraw funds from the account
+    public void withdraw(double amount) {
+        if (balance >= amount) {
+            balance -= amount;
+            System.out.println(amount + " withdrawn successfully.");
+        } else {
+            System.out.println("Insufficient funds.");
+        }
+    }
+    // Method to display account information
+    public void displayAccountInfo() {
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Account Holder Name: " + accountHolderName);
+        System.out.println("Balance: " + balance);
+    }
+    public static void main(String[] args) {
+        // Instantiate a BankAccount object using parameterized constructor
+        BankAccount account = new BankAccount(123456789, 1000.0, "John Doe");
+        // Display initial account information
+        System.out.println("Initial Account Information:");
+        account.displayAccountInfo();
+        // Deposit funds
+        account.deposit(500.0);
+        // Withdraw funds
+        account.withdraw(200.0);
+        // Display updated account information
+        System.out.println("\nUpdated Account Information:");
+        account.displayAccountInfo();
+    }
+}
+OUTPUT :
+Initial Account Information:
+Account Number: 123456789
+Account Holder Name: John Doe 
+ Balance: 1000.0
+500.0 deposited successfully.
+200.0 withdrawn successfully.
+Updated
+Account Number: 123456789
+Account Holder Name: John Doe
+Balance: 1300.
+=== Code Execution Successful ===Define a class named BankAccount with attributes account Number, balance, and account Hold Name. Implement methods deposit() and withdraw() to modify the balance. Instantiate an object of the BankAccount class by using parameterised constructor and demonstrate how to access and modify its attributes.
+public class BankAccount {
+    private int accountNumber;
+    private double balance;
+    private String accountHolderName;
+    // Parameterized constructor to initialize the attributes
+    public BankAccount(int accountNumber, double balance, String accountHolderName) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.accountHolderName = accountHolderName;
+    }
+    // Method to deposit funds into the account
+    public void deposit(double amount) {
+        balance += amount;
+        System.out.println(amount + " deposited successfully.");
+    }
+    // Method to withdraw funds from the account
+    public void withdraw(double amount) {
+        if (balance >= amount) {
+            balance -= amount;
+            System.out.println(amount + " withdrawn successfully.");
+        } else {
+            System.out.println("Insufficient funds.");
+        }
+    }
+    // Method to display account information
+    public void displayAccountInfo() {
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Account Holder Name: " + accountHolderName);
+        System.out.println("Balance: " + balance);
+    }
+    public static void main(String[] args) {
+        // Instantiate a BankAccount object using parameterized constructor
+        BankAccount account = new BankAccount(123456789, 1000.0, "John Doe");
+        // Display initial account information
+        System.out.println("Initial Account Information:");
+        account.displayAccountInfo();
+        // Deposit funds
+        account.deposit(500.0);
+        // Withdraw funds
+        account.withdraw(200.0);
+        // Display updated account information
+        System.out.println("\nUpdated Account Information:");
+        account.displayAccountInfo();
+    }
+}
+OUTPUT :
+Initial Account Information:
+Account Number: 123456789
+Account Holder Name: John Doe 
+ Balance: 1000.0
+500.0 deposited successfully.
+200.0 withdrawn successfully.
+Updated
+Account Number: 123456789
+Account Holder Name: John Doe
+Balance: 1300.
+=== Code Execution Successful ===
